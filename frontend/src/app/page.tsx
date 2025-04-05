@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 // import { div } from "@/components/ui/div"
-import { Download } from "lucide-react"
+import { Download , Globe } from "lucide-react"
 
 export default function Home() {
   return (
@@ -64,28 +64,44 @@ export default function Home() {
             Dreams
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl">
-            SPECTRUM is an all-in-one platform empowering the LGBTQ+ community through personalized job listings,
+            SPECTRUM (App & Web Solution) is an all-in-one platform empowering the LGBTQ+ community through personalized job listings,
             community forums, expert-led workshops, and AI support.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Link href="https://drive.google.com/file/d/13WLd_nN9BE56JxYhej5pbVDOxXB3z0O4/view?usp=sharing" target="_blank" className="border-purple-500 text-purple-500 hover:bg-purple-500/10">
-            <div  className=" text-purple-500 hover:bg-purple-500/10 flex items-center justify-center p-4 rounded-lg text-xl border border-purple-500 font-light">
-              <Download className="mr-2 h-6 w-6" /> Download APK
+            <Link href="https://drive.google.com/file/d/13WLd_nN9BE56JxYhej5pbVDOxXB3z0O4/view?usp=sharing" target="_blank" className="border-pink-500 text-pink-500 hover:bg-pink-500/10">
+            <div  className=" text-pink-500 hover:bg-purple-500/10 flex items-center justify-center p-4 rounded-lg text-xl border border-pink-500 font-light">
+              <Download className="mr-2 h-6 w-6" /> Download App
+            </div>
+            </Link>
+            <Link href="https://spectrum-olive-ten.vercel.app/" target="_blank" className="border-pink-500 text-pink-500 hover:bg-pink-500/10">
+            <div  className=" text-pink-500 hover:bg-purple-500/10 flex items-center justify-center p-4 rounded-lg text-xl border border-pink-500 font-light">
+              <Globe className="mr-2 h-6 w-6" /> View Website
             </div>
             </Link>
         
           </div>
         </div>
         <div className="flex-1 relative">
-          <div className="relative w-full aspect-[9/19] max-w-xs mx-auto">
-            <Image
+            <div className="flex justify-center gap-8">
+            <div className="relative w-full max-w-xs">
+              <Image
               src="/images/main-screen.png"
               alt="SPECTRUM App Main Screen"
-              width={320}
-              height={690}
+              width={200}
+              height={500}
               className="object-contain rounded-xl border border-pink-500"
-            />
-          </div>
+              />
+            </div>
+            <div className="relative w-full max-w-md">
+              <Image
+              src="/images/7.jpeg"
+              alt="SPECTRUM Website Mockup"
+              width={1200}
+              height={1200}
+              className="object-contain rounded-xl border border-purple-500"
+              />
+            </div>
+            </div>
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] aspect-square bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-teal-500/20 rounded-full blur-3xl" />
         </div>
       </section>
@@ -305,13 +321,20 @@ export default function Home() {
           <p className="text-gray-300 max-w-2xl mx-auto mb-8">
         Download SPECTRUM today and connect with a supportive community that celebrates diversity and inclusion.
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center gap-4">
         <Link
           href="https://drive.google.com/file/d/13WLd_nN9BE56JxYhej5pbVDOxXB3z0O4/view?usp=sharing"
           target="_blank"
-          className="border-purple-500 text-purple-500 hover:bg-purple-500/10 flex items-center justify-center p-4 rounded-lg text-lg border font-medium"
+          className="border-pink-500 text-pink-500 hover:bg-pink-500/10 flex items-center justify-center p-4 rounded-lg text-lg border font-light"
         >
-          <Download className="mr-2 h-5 w-5" /> Download APK
+          <Download className="mr-2 h-5 w-5" /> Download App
+        </Link>
+        <Link
+          href="https://spectrum-olive-ten.vercel.app/"
+          target="_blank"
+          className="border-pink-500 text-pink-500 hover:bg-pink-500/10 flex items-center justify-center p-4 rounded-lg text-lg border font-light"
+        >
+          <Globe className="mr-2 h-5 w-5" /> View Website
         </Link>
           </div>
         </div>

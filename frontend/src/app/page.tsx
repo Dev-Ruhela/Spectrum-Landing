@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 // import { div } from "@/components/ui/div"
-import { Download, ArrowRight } from "lucide-react"
+import { Download } from "lucide-react"
 
 export default function Home() {
   return (
